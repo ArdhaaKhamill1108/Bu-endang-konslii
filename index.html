@@ -1,11 +1,303 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Anjai</h1>
-</body>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PremiumApps — Langganan Aplikasi Premium</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Serif+Display:ital@0;1&family=Lilita+One&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="background" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <!-- user provides assets/logo.png (PNG) -->
+          <img src="assets/logo.png" alt="Logo PremiumApps" class="logo" />
+          <span class="brand-name">PremiumApps</span>
+        </div>
+
+        <nav class="nav">
+          <a href="#catalogue">Catalogue</a>
+          <a href="#features">Fitur</a>
+          <a href="#pricing">Harga</a>
+          <a href="#contact" class="btn-outline">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-left">
+            <h1 class="hero-title">
+              Langganan Aplikasi Premium — Fleksibel, Aman, Murah
+            </h1>
+            <p class="hero-sub">
+              Netflix, Telegram Premium, Disney+, Viu, iQiyi, Canva, Spotify,
+              YouTube — paket perminggu dan perbulan, mudah dipakai.
+            </p>
+
+            <div class="cta-row">
+              <a href="#catalogue" class="btn-primary">Lihat Catalogue</a>
+              <a href="#pricing" class="btn-ghost">Paket & Harga</a>
+            </div>
+
+            <ul class="highlights">
+              <li>Aktif instan setelah pembayaran</li>
+              <li>Pilihan per minggu & per bulan</li>
+              <li>Dukungan 24/7</li>
+            </ul>
+          </div>
+
+          <div class="hero-right">
+            <div class="hero-card">
+              <img src="assets/phone-mockup.png" alt="mockup" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="catalogue" class="catalogue">
+        <div class="container">
+          <h2 class="section-title">Catalogue Aplikasi</h2>
+          <p class="section-lead">
+            Pilih aplikasi, lalu tentukan durasi: per minggu atau per bulan.
+            Harga contoh di bawah — dapat diubah dari file data atau admin
+            panel.
+          </p>
+
+          <div class="cards-grid">
+            <!-- Card template: icon, name, description, price-week, price-month, buy -->
+
+            <article class="card">
+              <img class="app-icon" src="assets/netflix.png" alt="Netflix" />
+              <h3>Netflix</h3>
+              <p class="muted">
+                Streaming film & serial tanpa iklan (paket standar).
+              </p>
+              <div class="price-row">
+                <div>Perminggu: <strong>Rp 10.000</strong></div>
+                <div>Perbulan: <strong>Rp 35.000</strong></div>
+              </div>
+              <div class="card-actions">
+                <button class="btn-small" data-app="Netflix">
+                  Beli (Perminggu)
+                </button>
+                <button class="btn-small outline" data-app="Netflix">
+                  Beli (Perbulan)
+                </button>
+              </div>
+            </article>
+
+            <article class="card">
+              <img
+                class="app-icon"
+                src="assets/telegram.png"
+                alt="Telegram Premium"
+              />
+              <h3>Telegram Premium</h3>
+              <p class="muted">
+                Fitur plus: unggah lebih besar, kecepatan, tanda centang.
+              </p>
+              <div class="price-row">
+                <div>Perminggu: <strong>Rp 7.000</strong></div>
+                <div>Perbulan: <strong>Rp 25.000</strong></div>
+              </div>
+              <div class="card-actions">
+                <button class="btn-small" data-app="Telegram Premium">
+                  Beli (Perminggu)
+                </button>
+                <button class="btn-small outline" data-app="Telegram Premium">
+                  Beli (Perbulan)
+                </button>
+              </div>
+            </article>
+
+            <article class="card">
+              <img class="app-icon" src="assets/disney.png" alt="Disney+" />
+              <h3>Disney+</h3>
+              <p class="muted">Film keluarga, Marvel, Star Wars.</p>
+              <div class="price-row">
+                <div>Perminggu: <strong>Rp 9.000</strong></div>
+                <div>Perbulan: <strong>Rp 30.000</strong></div>
+              </div>
+              <div class="card-actions">
+                <button class="btn-small" data-app="Disney+">
+                  Beli (Perminggu)
+                </button>
+                <button class="btn-small outline" data-app="Disney+">
+                  Beli (Perbulan)
+                </button>
+              </div>
+            </article>
+
+            <article class="card">
+              <img class="app-icon" src="assets/viu.png" alt="Viu" />
+              <h3>Viu</h3>
+              <p class="muted">K-drama & variety show.</p>
+              <div class="price-row">
+                <div>Perminggu: <strong>Rp 5.000</strong></div>
+                <div>Perbulan: <strong>Rp 18.000</strong></div>
+              </div>
+              <div class="card-actions">
+                <button class="btn-small" data-app="Viu">
+                  Beli (Perminggu)
+                </button>
+                <button class="btn-small outline" data-app="Viu">
+                  Beli (Perbulan)
+                </button>
+              </div>
+            </article>
+
+            <article class="card">
+              <img class="app-icon" src="assets/iqiyi.png" alt="iQiyi" />
+              <h3>iQiyi</h3>
+              <p class="muted">Drama & variety China.</p>
+              <div class="price-row">
+                <div>Perminggu: <strong>Rp 6.000</strong></div>
+                <div>Perbulan: <strong>Rp 20.000</strong></div>
+              </div>
+              <div class="card-actions">
+                <button class="btn-small" data-app="iQiyi">
+                  Beli (Perminggu)
+                </button>
+                <button class="btn-small outline" data-app="iQiyi">
+                  Beli (Perbulan)
+                </button>
+              </div>
+            </article>
+
+            <article class="card">
+              <img class="app-icon" src="assets/canva.png" alt="Canva" />
+              <h3>Canva Pro</h3>
+              <p class="muted">Akses template premium & fitur kolaborasi.</p>
+              <div class="price-row">
+                <div>Perminggu: <strong>Rp 8.000</strong></div>
+                <div>Perbulan: <strong>Rp 28.000</strong></div>
+              </div>
+              <div class="card-actions">
+                <button class="btn-small" data-app="Canva Pro">
+                  Beli (Perminggu)
+                </button>
+                <button class="btn-small outline" data-app="Canva Pro">
+                  Beli (Perbulan)
+                </button>
+              </div>
+            </article>
+
+            <article class="card">
+              <img class="app-icon" src="assets/spotify.png" alt="Spotify" />
+              <h3>Spotify Premium</h3>
+              <p class="muted">Streaming musik tanpa iklan.</p>
+              <div class="price-row">
+                <div>Perminggu: <strong>Rp 5.000</strong></div>
+                <div>Perbulan: <strong>Rp 17.000</strong></div>
+              </div>
+              <div class="card-actions">
+                <button class="btn-small" data-app="Spotify Premium">
+                  Beli (Perminggu)
+                </button>
+                <button class="btn-small outline" data-app="Spotify Premium">
+                  Beli (Perbulan)
+                </button>
+              </div>
+            </article>
+
+            <article class="card">
+              <img
+                class="app-icon"
+                src="assets/youtube.png"
+                alt="YouTube Premium"
+              />
+              <h3>YouTube Premium</h3>
+              <p class="muted">Video tanpa iklan & background play.</p>
+              <div class="price-row">
+                <div>Perminggu: <strong>Rp 11.000</strong></div>
+                <div>Perbulan: <strong>Rp 38.000</strong></div>
+              </div>
+              <div class="card-actions">
+                <button class="btn-small" data-app="YouTube Premium">
+                  Beli (Perminggu)
+                </button>
+                <button class="btn-small outline" data-app="YouTube Premium">
+                  Beli (Perbulan)
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="container">
+          <h2 class="section-title">Kenapa Pilih Kami?</h2>
+          <div class="feature-grid">
+            <div class="feature">
+              <h4>Instan & Aman</h4>
+              <p>Proses otomatis, informasi jelas, aman untuk pelanggan.</p>
+            </div>
+            <div class="feature">
+              <h4>Durasi Fleksibel</h4>
+              <p>Pilih perminggu atau perbulan sesuai kebutuhan.</p>
+            </div>
+            <div class="feature">
+              <h4>Dukungan 24/7</h4>
+              <p>Layanan pelanggan siap membantu kapan saja.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="pricing">
+        <div class="container">
+          <h2 class="section-title">Paket & Harga</h2>
+          <p class="section-lead">
+            Harga di atas adalah contoh. Kamu bisa mengganti teks dan nominal
+            lewat file CSS/HTML atau admin panel.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="section-title">Hubungi Kami</h2>
+          <form
+            class="contact-form"
+            action="mailto:you@example.com"
+            method="POST"
+            enctype="text/plain"
+          >
+            <input type="text" name="name" placeholder="Nama" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Tanya tentang paket..."
+              required
+            ></textarea>
+            <button class="btn-primary">Kirim</button>
+          </form>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <small>© 2025 PremiumApps — Semua hak dilindungi.</small>
+          <div class="socials">
+            <a href="#">Instagram</a>
+            <a href="#">Telegram</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
